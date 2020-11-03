@@ -1,5 +1,7 @@
 {
   "name": "zulasoftMarketing",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

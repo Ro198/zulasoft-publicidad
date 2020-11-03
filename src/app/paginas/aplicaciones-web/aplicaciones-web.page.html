@@ -1,0 +1,100 @@
+
+
+<ion-header class="ion-no-border">
+	<ion-toolbar>
+   
+    <ion-buttons slot="start" >
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+
+    <ion-title color="primary" slot="start">Aplicaciones Web</ion-title>
+
+		<ion-buttons slot="end">
+			<ion-button (click)="llamada()" class="bordered" fill="solid" color="secondary">
+				<ion-icon name="call-outline"></ion-icon>
+			</ion-button>
+		</ion-buttons>
+	</ion-toolbar>
+</ion-header>
+
+ 
+<ion-content>
+  <div class="slides ion-margin-bottom">
+    <ion-slides [options]="slidesOptions">
+      <ion-slide>
+        <div>
+          <img src="../assets/img/aw1.png">
+          <p style="font-size: 10px;">Una aplicación móvil con una aplicación web, te imaginas</p>
+        </div>
+      </ion-slide>
+
+      <ion-slide>
+            <div >
+              <img src="../assets/img/aw2.png">
+              <p style="font-size: 10px;">Finanzas controladas, dinero seguro</p>
+            </div>
+      </ion-slide>
+
+    </ion-slides>
+  </div>
+
+  <div class="container">
+
+  <h2 style="text-align: center;">¿Porque una aplicación web?</h2>
+  
+  <div style="text-align: center;">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <img src="../assets/img/appw.jpg" style="width:80%;">
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <p>Lo hacemos seguro</p>
+    <p>Menos fugas de dinero</p>
+    <p>Más ganancias</p>
+    <p>Más control en tus productos</p>
+  </div>
+
+  <br>
+
+    <h2 style="text-align: center;">¡Accede en cualquier dispositivo!</h2>
+
+    <div style="text-align: center;">
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <img src="../assets/img/aw3.jpg">
+          </ion-col>
+          <ion-col>
+            <p style="font-size: 15px;">Ya sea desde tu negocio o desde tu hogar</p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+  
+      <ion-grid> 
+        <ion-row>
+          <ion-col>
+            <p style="font-size: 15px;">Entra y verifica tus datos desde cualquier dispositivo portatil</p>
+          </ion-col>
+          <ion-col>
+            <img src="../assets/img/aw4.jpg">
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+  
+    </div>
+
+    <br>
+
+    <div style="text-align: center;">
+      <ion-button (click)="mensaje()" class="bordered" color="secondary">
+        <p style="text-transform: capitalize;">Envianos un mensaje</p>
+      </ion-button>
+    </div>
+
+    <br>
+
+  </div>
+
+</ion-content>

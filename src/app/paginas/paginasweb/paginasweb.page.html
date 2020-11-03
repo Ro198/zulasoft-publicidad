@@ -1,0 +1,121 @@
+
+<ion-header class="ion-no-border">
+	<ion-toolbar>
+   
+    <ion-buttons slot="start" >
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+
+    <ion-title color="primary" slot="start">Paginas web</ion-title>
+
+		<ion-buttons slot="end">
+			<ion-button (click)="llamada()" class="bordered" fill="solid" color="secondary">
+				<ion-icon name="call-outline"></ion-icon>
+			</ion-button>
+		</ion-buttons>
+	</ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <div class="slides ion-margin-bottom">
+    <ion-slides [options]="slidesOptions">
+      <ion-slide>
+        <div>
+          <img src="../assets/img/p1.png">
+          <p style="font-size: 10px;">Un sitio Web, una oportunidad de hacer crecer tu negocio</p>
+        </div>
+      </ion-slide>
+
+      <ion-slide>
+            <div >
+              <img src="../assets/img/p4.png">
+              <p style="font-size: 10px;">Te imaginas cambiar tu negocio y poder expandirlo a un mundo lleno de posibilidades y de tener un futuro mejor</p>
+            </div>
+      </ion-slide>
+
+    </ion-slides>
+  </div>
+
+  <div class="container">
+
+  <h2 style="text-align: center;">¿Quieres entrar al mundo digital?</h2>
+  
+  <div style="text-align: center;">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <img src="../assets/img/p2.png" style="width:80%;">
+        </ion-col>
+        <ion-col>
+          <img src="../assets/img/p3.png" style="width:80%;">
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <p>Más clientes, más ventas, más posibilidades</p>
+    <p>100% Seguro</p>
+  </div>
+
+  <br>
+
+    <h2>¿Como lo hago?</h2>
+
+    <ion-slides [options]="slidesOptions" style="width: 350px;">
+
+      <ion-slide>
+        <ion-card>
+          <ion-card-header>
+            <div class="main">
+              <img src="../assets/img/p5.png">
+            </div>
+          </ion-card-header>
+          <ion-card-content class="ion-text-left">
+            <p>1. Contactanos</p>
+            <p>2. Cuéntanos tu idea</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-slide>
+
+      <ion-slide>
+        <ion-card>
+          <ion-card-header>
+            <div class="main">
+              <img src="../assets/img/p6.png">
+            </div>
+          </ion-card-header>
+          <ion-card-content class="ion-text-left">
+            <p>3. Te creamos una propuesta</p>
+            <p>4. Desarrollamos tu idea</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-slide>
+
+      <ion-slide>
+        <ion-card>
+          <ion-card-header>
+            <div class="main">
+              <img src="../assets/img/p7.png">
+            </div>
+          </ion-card-header>
+          <ion-card-content class="ion-text-left">
+            <p>5. Probamos tu proyecto</p>
+            <p>6. Aplicación Terminada</p>
+          </ion-card-content> 
+        </ion-card>
+      </ion-slide>
+
+    </ion-slides>
+
+    <br>
+
+    <div style="text-align: center;">
+      <ion-button (click)="mensaje()" class="bordered" color="secondary">
+        <p style="text-transform: capitalize;">Envianos un mensaje</p>
+      </ion-button>
+    </div>
+
+    <br>
+
+  </div>
+
+</ion-content>

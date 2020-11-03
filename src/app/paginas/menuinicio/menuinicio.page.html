@@ -1,0 +1,145 @@
+<ion-header [translucent]="true" class="ion-no-border">
+  <ion-toolbar>
+    <div style="text-align: left; margin-top: 10px;">
+      <img src="../assets/img/zulasoft2.png" style="width:45%;">
+    </div> 
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  
+  <ion-fab vertical="top" horizontal="end" slot="fixed" edge class="btnfloat">
+    <ion-fab-button>
+      <ion-icon name="cloudy-outline"></ion-icon>
+    </ion-fab-button>
+
+    <ion-fab-list side="start">
+      <ion-fab-button onclick="window.open('https:www.facebook.com/zulasoft','_system','location=yes')">
+                   <ion-icon name="logo-facebook" style="color: blue;"></ion-icon></ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+
+
+  <!--  <ion-segment>
+    <ion-segment-button >
+      <ion-label>Servicios</ion-label>
+    </ion-segment-button>
+    <ion-segment-button >
+      <ion-label>Nosotros</ion-label>
+    </ion-segment-button>
+    <ion-segment-button >
+      <ion-label>Box Office</ion-label>
+    </ion-segment-button>
+  </ion-segment>  -->
+  
+<div style="text-align: center;"> 
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-button class="bordered" routerLink="/nosotros" color="secondary">
+          <p style="text-transform: capitalize;">Nosotros</p>
+        </ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button class="bordered" routerLink="/politicas" color="secondary">
+          <p style="text-transform: capitalize;">Politicas</p>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</div>
+
+  <div style="text-align: center;">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+            <ion-button class="bordered" fill="solid" routerLink="/notificaciones" color="warning">
+              <ion-icon name="notifications-outline"></ion-icon>
+            </ion-button>
+          <p style="font-size: 10px;">Notifcaciones</p>
+        </ion-col>
+        <ion-col>
+            <ion-button (click)="mensaje()" color="primary" class="bordered" fill="solid">
+              <ion-icon name="mail-outline"></ion-icon>
+            </ion-button>
+          <p style="font-size: 10px;">Enviar mensaje</p>
+        </ion-col>
+        <ion-col>
+            <ion-button (click)="llamada()" color="success" class="bordered" fill="solid">
+              <ion-icon name="call-outline"></ion-icon>
+            </ion-button>
+          <p style="font-size: 10px;">Hacer llamada</p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+  <ion-slides [options]="options">   
+    <ion-slide>     
+      <ion-grid>
+        <ion-row>
+          <ion-col size="12" class="poster-col">
+            <img class="poster" src="../assets/img/movil.png" alt="" routerLink="/appsmoviles">
+          </ion-col>
+          <ion-col size="12">
+            <h5 class="ion-no-margin" style="color: teal;">Aplicaciones Móviles</h5>
+            <p class="ion-no-margin rate">
+              Tu idea, es nuestra motivación.
+            </p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="12" class="poster-col">
+            <img class="poster" src="../assets/img/web.jpg" alt="" routerLink="/paginasweb">
+          </ion-col>
+          <ion-col size="12">
+            <h5 class="ion-no-margin" style="color: teal;">Paginas Web</h5>
+            <p class="ion-no-margin rate">
+              Tienes muchas probabilidades de ganar.
+            </p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-slide>
+    
+    <ion-slide>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="12" class="poster-col">
+            <img class="poster" src="../assets/img/soporte.png" alt="" routerLink="/soporte">
+          </ion-col>
+          <ion-col size="12">
+            <h5 class="ion-no-margin" style="color: teal;">Soporte</h5>
+            <p class="ion-no-margin rate">
+              Larga vida a tu equipo de computo.
+            </p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-slide>
+    
+    <ion-slide>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="12" class="poster-col">
+            <img class="poster" src="../assets/img/appsweb.png" alt="" routerLink="/aplicaciones-web">
+          </ion-col>
+          <ion-col size="12">
+            <h5 class="ion-no-margin" style="color: teal;">Aplicaciones Web</h5>
+            <p class="ion-no-margin rate">
+              Todo conectado en un mismo lugar.
+            </p>
+          </ion-col>
+        </ion-row>  
+      </ion-grid> 
+    </ion-slide>
+    
+  </ion-slides>
+
+  
+</ion-content>

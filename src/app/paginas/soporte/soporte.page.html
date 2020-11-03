@@ -1,0 +1,102 @@
+
+<ion-header class="ion-no-border">
+	<ion-toolbar>
+   
+    <ion-buttons slot="start" >
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+
+    <ion-title color="primary" slot="start">Soporte</ion-title>
+
+		<ion-buttons slot="end">
+			<ion-button (click)="llamada()" class="bordered" fill="solid" color="secondary">
+				<ion-icon name="call-outline"></ion-icon>
+			</ion-button>
+		</ion-buttons>
+	</ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <div class="slides ion-margin-bottom">
+    <ion-slides [options]="slidesOptions">
+      <ion-slide>
+        <div style="margin-top: 25px;">
+          <img src="../assets/img/soportee.png">
+          <p style="font-size: 10px;">Mantenimiento correctivo y preventivo de equipo de computo</p>
+        </div>
+      </ion-slide>
+
+      <ion-slide>
+            <div >
+              <img src="../assets/img/m1.png">
+              <p style="font-size: 10px;">Un mantenimiento optimo extendera la vida de nuestro equipo de computo</p>
+            </div>
+      </ion-slide>
+
+    </ion-slides>
+  </div>
+
+  <div class="container">
+
+  <h2 style="text-align: center;">Mantenimientos</h2>
+  
+  <div style="text-align: center;">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <p style="font-size: 15px;">Mantenimiento preventivo</p>
+          <img src="../assets/img/m2.png">
+        </ion-col>
+        <ion-col>
+          <p style="font-size: 15px;">Mantenimiento correctivo</p>
+          <img src="../assets/img/m3.png">
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <p>Más clientes, más ventas, más posibilidades</p>
+    <p>100% Seguro</p>
+  </div>
+
+  <br>
+
+    <h2>Soporte Digital</h2>
+
+    <div style="text-align: center;">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <img src="../assets/img/m5.png">
+        </ion-col>
+        <ion-col>
+          <p style="font-size: 15px;">Aplicaciones móviles Actualizaciones, modificaciones y más...</p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <ion-grid> 
+      <ion-row>
+        <ion-col>
+          <p style="font-size: 15px;">Paginas web Respaldos, configuraciones y más...</p>
+        </ion-col>
+        <ion-col>
+          <img src="../assets/img/m6.png">
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+  </div>
+
+    <br>
+
+    <div style="text-align: center;">
+      <ion-button (click)="mensaje()" class="bordered" color="secondary">
+        <p style="text-transform: capitalize;">Envianos un mensaje</p>
+      </ion-button>
+    </div>
+
+    <br>
+
+  </div>
+
+</ion-content>

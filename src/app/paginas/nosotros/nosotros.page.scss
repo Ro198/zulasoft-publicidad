@@ -1,0 +1,22 @@
+ion-content {
+    ion-card {
+        border-radius: 28;
+        text-align: left;
+        --color: #fff;
+
+        ion-card-content {
+            h2 {
+                font-size: 24;
+                font-weight: bold;
+                margin-bottom: 20px;
+                
+            }
+
+        }
+    }
+}
+
+.card1 {
+    background: linear-gradient(160deg, rgba(2,0,36,1) 0%, rgba(0,157,174,1) 35%, rgba(0,212,255,1) 100%);
+    
+}

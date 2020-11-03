@@ -1,0 +1,53 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title color="primary">Notificaciones</ion-title>
+
+    <!-- <ion-buttons slot="end"> -->
+      <ion-button slot="end" (click)="borrarMensajes()"
+                  color="danger"
+                  class="bordered" fill="solid">
+        <ion-icon slot="icon-only" name="trash"></ion-icon>
+      </ion-button>
+    <!-- </ion-buttons> -->
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+   <!--  <ion-list-header>
+      <ion-label>UserId</ion-label>
+    </ion-list-header>
+
+    <ion-item>
+      <ion-label>
+          {{ pushService.userId }}
+      </ion-label>
+    </ion-item> -->
+
+    <!-- <ion-list-header>
+      <ion-label>De: ZulaSoft</ion-label>
+    </ion-list-header> -->
+
+    
+    <ion-item *ngFor="let push of mensajes">
+      <ion-list>  
+        <h5> {{ push.title }} </h5>
+        <p> {{ push.body }} </p> 
+        <p>
+          {{ push.additionalData | json }}
+        </p>
+      </ion-list>
+    </ion-item>
+
+
+  </ion-list>
+
+
+
+
+
+</ion-content>

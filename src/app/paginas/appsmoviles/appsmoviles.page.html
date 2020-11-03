@@ -1,0 +1,206 @@
+
+<ion-header class="ion-no-border">
+	<ion-toolbar>
+   
+    <ion-buttons slot="start" >
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+
+    <ion-title color="primary" slot="start">Aplicaciones móviles</ion-title>
+
+		<ion-buttons slot="end">
+			<ion-button (click)="llamada()" class="bordered" fill="solid" color="secondary">
+				<ion-icon name="call-outline"></ion-icon>
+			</ion-button>
+		</ion-buttons>
+	</ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <div class="slides ion-margin-bottom">
+    <ion-slides [options]="slidesOptions">
+      <ion-slide>
+        <div>
+          <img src="../assets/img/A1.png">
+          <p style="font-size: 10px;">Desarrollamos ideas sensacionales</p>
+        </div>
+      </ion-slide>
+
+      <ion-slide>
+            <div >
+              <img src="../assets/img/A31.png">
+              <p style="font-size: 10px;">Tu idea, tu futuro</p>
+            </div>
+      </ion-slide>
+
+    </ion-slides>
+  </div>
+
+  <div class="container">
+
+  <h2>Cualidades</h2>
+  
+    <ion-item lines="none">
+      <ion-grid>
+        <ion-row class="ion-align-items-center">
+          <ion-col size="3">
+            <ion-button color="light" fill="clear">
+              <ion-icon slot="icon-only" name="ribbon-outline"></ion-icon>
+            </ion-button>
+          </ion-col>
+          <ion-col size="7">
+            <ion-label>
+							<h4>Calidad</h4>
+						</ion-label>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-grid>
+        <ion-row class="ion-align-items-center">
+          <ion-col size="3">
+            <ion-button color="light" fill="clear">
+              <ion-icon slot="icon-only" name="headset-outline"></ion-icon>
+            </ion-button>
+          </ion-col>
+          <ion-col size="7">
+            <ion-label>
+							<h4>Servicio</h4>
+						</ion-label>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+    
+    <ion-item lines="none">
+      <ion-grid>
+        <ion-row class="ion-align-items-center">
+          <ion-col size="3">
+            <ion-button color="light" fill="clear">
+              <ion-icon slot="icon-only" name="settings-outline"></ion-icon>
+            </ion-button>
+          </ion-col>
+          <ion-col size="7">
+            <ion-label>
+							<h4>Funcionalidad</h4>
+						</ion-label>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-grid>
+        <ion-row class="ion-align-items-center">
+          <ion-col size="3">
+            <ion-button color="light" fill="clear">
+              <ion-icon slot="icon-only" name="lock-closed-outline"></ion-icon>
+            </ion-button>
+          </ion-col>
+          <ion-col size="7">
+            <ion-label>
+							<h4>Seguridad</h4>
+						</ion-label>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-grid>
+        <ion-row class="ion-align-items-center">
+          <ion-col size="3">
+            <ion-button color="light" fill="clear">
+              <ion-icon slot="icon-only" name="people-circle-outline"></ion-icon>
+            </ion-button>
+          </ion-col>
+          <ion-col size="7">
+            <ion-label>
+							<h4>Marketing optimizado</h4>
+						</ion-label>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-grid>
+        <ion-row class="ion-align-items-center">
+          <ion-col size="3">
+            <ion-button color="light" fill="clear">
+              <ion-icon slot="icon-only" name="repeat-outline"></ion-icon>
+            </ion-button>
+          </ion-col>
+          <ion-col size="7">
+            <ion-label>
+							<h4>Actualizaciones</h4>
+						</ion-label>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+
+    <h2>¿Como lo hago?</h2>
+
+    <ion-slides [options]="slidesOptions" style="width: 350px;">
+
+      <ion-slide>
+        <ion-card>
+          <ion-card-header>
+            <div class="main">
+              <img src="../assets/img/c1.png">
+            </div>
+          </ion-card-header>
+          <ion-card-content class="ion-text-left">
+            <p>1. Contactanos</p>
+            <p>2. Cuéntanos tu idea</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-slide>
+
+      <ion-slide>
+        <ion-card>
+          <ion-card-header>
+            <div class="main">
+              <img src="../assets/img/c2.png">
+            </div>
+          </ion-card-header>
+          <ion-card-content class="ion-text-left">
+            <p>3. Te creamos una propuesta</p>
+            <p>4. Desarrollamos tu idea</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-slide>
+
+      <ion-slide>
+        <ion-card>
+          <ion-card-header>
+            <div class="main">
+              <img src="../assets/img/c3.png">
+            </div>
+          </ion-card-header>
+          <ion-card-content class="ion-text-left">
+            <p>5. Probamos tu proyecto</p>
+            <p>6. Aplicación Terminada</p>
+          </ion-card-content> 
+        </ion-card>
+      </ion-slide>
+
+    </ion-slides>
+
+    <br>
+
+    <div style="text-align: center;">
+      <ion-button (click)="mensaje()" class="bordered" color="secondary">
+        <p style="text-transform: capitalize;">Envianos un mensaje</p>
+      </ion-button>
+    </div>
+
+    <br>
+
+  </div>
+
+</ion-content>

@@ -1,0 +1,98 @@
+
+
+
+
+
+  <ion-header translucent="true" mode="md">
+  <ion-toolbar color="primary">
+    <ion-title slot="start">Servicios</ion-title>
+
+    <ion-button slot="end" routerLink="/menuinicio" color="secondary">
+      <ion-icon name="home"></ion-icon>
+    </ion-button>
+
+    <ion-button slot="end" routerLink="/notificaciones" color="secondary">
+      <ion-icon name="notifications-outline"></ion-icon>
+    </ion-button>
+    
+    <ion-button slot="end" (click)="mensaje()" color="secondary">
+      <ion-icon name="mail-outline"></ion-icon>
+    </ion-button>
+
+    <ion-button slot="end" (click)="llamada()" color="secondary">
+      <ion-icon name="call-outline"></ion-icon>
+    </ion-button>
+
+  </ion-toolbar>
+ 
+</ion-header>  
+
+
+<ion-content padding>
+
+  <ion-card>
+    <ion-card-header>
+
+      <img src="../assets/img/movil.jpg">
+
+      <ion-card-subtitle>Zulasoft</ion-card-subtitle>
+      <ion-card-title>Aplicaciones Móviles</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      Tu idea, es nuestra motivación, nuestra cualidad es la transformación de tu idea en algo espectacular.
+    </ion-card-content>
+    <div style="text-align: center;">
+      <ion-button routerLink="/appsmoviles">
+        <ion-icon name="log-in-outline"></ion-icon> más...
+      </ion-button>
+    </div>
+    <br>
+  </ion-card>
+
+  
+  <ion-card>
+    <ion-card-header>
+
+      <img src="../assets/img/web.png">
+
+      <ion-card-subtitle>Zulasoft</ion-card-subtitle>
+      <ion-card-title>Paginas Web</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      Te imaginas a tu negocio con un toque del futuro, donde hay un mundo de posibilidades y prosperidad. 
+    </ion-card-content>
+    <div style="text-align: center;">
+      <ion-button routerLink="/paginasweb">
+        <ion-icon name="log-in-outline"></ion-icon> más...
+      </ion-button>
+    </div>
+    <br>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+
+      <img src="../assets/img/soporte.png">
+
+      <ion-card-subtitle>Zulasoft</ion-card-subtitle>
+      <ion-card-title>Soporte y Mantenimiento</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      Un mantenimiento adecuado para tu equipo de computo es muy importante, ya que extendera la vida de tu equipo por muchos años.
+    </ion-card-content>
+    <div style="text-align: center;">
+      <ion-button routerLink="/soporte">
+        <ion-icon name="log-in-outline"></ion-icon> más...
+      </ion-button>
+    </div>
+    <br>
+  </ion-card>
+ 
+
+</ion-content>
+
+
+<!-- <img class="bg-header animated fadeIn" src="assets/img/bg-header.png" alt=""> -->
